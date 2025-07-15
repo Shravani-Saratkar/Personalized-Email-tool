@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html> 
+    <body>
+        
+            <form action = '/submit' method="post">
+             <label for = "business_name">Enter Your Business Name</label><br>
+             <input type = "text" id ="business_name" name="business_name" ><br><br>
+             <label for = "location"> Enter the location</label><br>
+             <input type = "text" id="location" name="location"> <br><br>
+             <input type="submit" value="Submit"><br>
+
+
+        </form>
+
+
+        {% if outreach_email %}
+            <hr>
+            <h3>Generated Outreach Email:</h3>
+            <pre>{{ outreach_email }}</pre>
+        {% endif %}
+
+    </body>
+</html>
